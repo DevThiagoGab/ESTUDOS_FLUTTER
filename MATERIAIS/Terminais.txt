@@ -1,0 +1,3 @@
+Windows -> https://blog.formacao.dev/iniciando-com-o-terminal-do-windows/
+
+Linux/Mac -> https://blog.formacao.dev/terminal-no-macos-linux/
