@@ -1,0 +1,10 @@
+ElevatedButton => Ações principais, destaque no app.
+TextButton => Ações secundárias sem destaque.
+OutlinedButton => Alternativa ao ElevatedButton, mas com borda.
+IconButton => Ações representadas apenas por ícones.
+FloatingActionButton => Botões de ação rápida (ex: adicionar item).
+DropdownButton => Menus suspensos para seleção de opções.
+PopupMenuButton => Botão de menu (ex: três pontinhos no canto da tela).
+BackButton => Botão de voltar padrão do sistema.
+CloseButton => Botão de fechar (ex: em diálogos).
+RawMaterialButton => Botão customizado com formato livre.
