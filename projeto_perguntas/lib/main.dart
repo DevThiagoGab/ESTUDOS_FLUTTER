@@ -5,9 +5,14 @@ main() {
   runApp(new PerguntaApp());
 }
 
+// Não muda de estado após a criação.
+// Exemplo: Textos, ícones, imagens fixas.
 class PerguntaApp extends StatelessWidget {
+  var perguntaSelecionada = 1;
+
   void responder() {
-    print('Primeira resposta!');
+    perguntaSelecionada++;
+    print(perguntaSelecionada);
   }
 
 // @override é uma anotação usada para quando se quer modificar um método que já existe
@@ -44,8 +49,9 @@ class PerguntaApp extends StatelessWidget {
           // children = Lista de widgets organizados verticalmente
           children: <Widget>[
             // Pode ser exibido das duas formas
-            Text(perguntas.elementAt(0)),
-            Text(perguntas[1]),
+            //Text(perguntas.elementAt(0)),
+            //Text(perguntas[1]),
+            Text(perguntas[perguntaSelecionada]),
             ElevatedButton(
                 onPressed:
                     responder, // Usando a função responder como parâmetro
