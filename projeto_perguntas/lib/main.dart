@@ -6,6 +6,10 @@ main() {
 }
 
 class PerguntaApp extends StatelessWidget {
+  void responder() {
+    print('Primeira resposta!');
+  }
+
 // @override é uma anotação usada para quando se quer modificar um método que já existe
 // na classe mãe (superclasse).
 // Quando uma classe herda de outra, ela pode reescrever métodos da classe mãe. O @override deixa
@@ -43,23 +47,19 @@ class PerguntaApp extends StatelessWidget {
             Text(perguntas.elementAt(0)),
             Text(perguntas[1]),
             ElevatedButton(
+                onPressed:
+                    responder, // Usando a função responder como parâmetro
+                child: const Text('ElevatedButton')),
+            TextButton(
                 onPressed: () {
-                  print('Botão pressionado!');
+                  // Criando a função, não recebe nenhum parâmetro
+                  print('Segunda resposta!');
                 },
-                child: const Text('ElevatedButton')
-                ),
-                TextButton(
-                onPressed: () {
-                  print('Botão pressionado!');
-                },
-                child: const Text('TextButton')
-                ),
-                  OutlinedButton(
-                  onPressed: () {
-                    print('Botão pressionado!');
-                  },
-                  child: const Text('OutlinedButton')
-                  ),
+                child: const Text('TextButton')),
+            OutlinedButton(
+                onPressed: () =>
+                    print('Terceira resposta!'), // Criando a função arrow
+                child: const Text('OutlinedButton')),
           ],
         ),
       ),
